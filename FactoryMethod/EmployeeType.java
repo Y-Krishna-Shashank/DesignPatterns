@@ -1,0 +1,3 @@
+public enum EmployeeType {
+    INTERN,SENIOR_SOFTWARE_ENGINEER,SOFTWARE_ENGINEER;
+}
