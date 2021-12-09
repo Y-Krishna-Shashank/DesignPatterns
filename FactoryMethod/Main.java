@@ -8,12 +8,14 @@ public class Main {
         System.out.println("Enter employee type\n 1.Intern\n 2.Software engineer\n 3.Senior software engineer\n");
         designation= scanner.nextLine();
         Factory eeDesignationFactory=new Factory();
+        EmployeeDesignation emp;
         if(designation.equalsIgnoreCase("intern"))
-            eeDesignationFactory.employeeObject(EmployeeType.INTERN);
+           emp= eeDesignationFactory.employeeObject(EmployeeType.INTERN);
         else if(designation.equalsIgnoreCase("software engineer"))
-            eeDesignationFactory.employeeObject(EmployeeType.SOFTWARE_ENGINEER);
+           emp= eeDesignationFactory.employeeObject(EmployeeType.SOFTWARE_ENGINEER);
         else if(designation.equalsIgnoreCase("senior software engineer"))
-            eeDesignationFactory.employeeObject(EmployeeType.SENIOR_SOFTWARE_ENGINEER);
+            emp=eeDesignationFactory.employeeObject(EmployeeType.SENIOR_SOFTWARE_ENGINEER);
+        emp.printBenefits();
 
     }
 }
